@@ -1,26 +1,12 @@
 <div class="portal-wrapper">
   <h1>Sea Haven Portal</h1>
   <div class="grid">
-    {% if "Accounts User" in roles %}
-    <a href="https://accounting.getmynewsite.com" class="app-link">
-      <i class="fas fa-file-invoice-dollar"></i>
-      <div class="app-label">Accounting</div>
-    </a>
-    {% endif %}
-
-    {% if "Wiki Editor" in roles %}
-    <a href="https://wiki.getmynewsite.com" class="app-link">
-      <i class="fas fa-book"></i>
-      <div class="app-label">Wiki</div>
-    </a>
-    {% endif %}
-
-    {% if "OfficeTrax" in roles %}
-    <a href="https://seahaven.core7.net" class="app-link">
-      <i class="fas fa-th"></i>
-      <div class="app-label">OfficeTrax</div>
-    </a>
-    {% endif %}
+    {% for icon in icons %}
+      <a href="{{ icon.url }}" class="app-link">
+        <i class="fas {{ icon.icon }}"></i>
+        <div class="app-label">{{ icon.label }}</div>
+      </a>
+    {% endfor %}
   </div>
 </div>
 
@@ -68,4 +54,4 @@
   }
 </style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
