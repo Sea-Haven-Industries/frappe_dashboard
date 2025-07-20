@@ -242,4 +242,24 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-fixtures = ["Dashboard Icon"]
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "in", ["Dashboard Icon"]]
+        ]
+    },
+    {
+        "dt": "Property Setter"
+    },
+    "Dashboard Icon"  # export the entire custom DocType
+]
+
+doc_events = {
+    "Dashboard Icon": {
+        "after_insert": "dashboard.utils.cache.clear_dashboard_cache",
+        "on_update": "dashboard.utils.cache.clear_dashboard_cache",
+        "on_trash": "dashboard.utils.cache.clear_dashboard_cache",
+    }
+}
+

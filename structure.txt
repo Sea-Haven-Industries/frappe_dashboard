@@ -1,0 +1,169 @@
+.
+├── .editorconfig
+├── .eslintrc
+├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── ORIG_HEAD
+│   ├── branches
+│   ├── config
+│   ├── description
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   ├── gui-editable
+│   │       │   └── main
+│   │       └── remotes
+│   │           └── origin
+│   │               ├── gui-editable
+│   │               └── main
+│   ├── objects
+│   │   ├── 09
+│   │   │   ├── 4112e947ce61c9aceb8c1787b9023042a48b39
+│   │   │   └── eac252e52447d7aa4bee1053b0970c81ccafba
+│   │   ├── 0e
+│   │   │   └── b0dcabfc2d2b83db1d6719bfc862a228f8f6d5
+│   │   ├── 12
+│   │   │   └── 0db37f88af756bfb2d24f5a567a823d21891e3
+│   │   ├── 18
+│   │   │   └── 008c8197ef3b8e6f398eef11c9db6a7e062df9
+│   │   ├── 19
+│   │   │   └── 7cf42f4ccf618913caace9d57a06d33aa7d27a
+│   │   ├── 24
+│   │   │   └── b8286dac31b26179ddaaea04d5ae3011270ee8
+│   │   ├── 2e
+│   │   │   └── a73bddd7dfb8f07a4c65a6461cf658eaeb277e
+│   │   ├── 38
+│   │   │   └── 662b017a5ac9c947a8435cdcff9a6060e15950
+│   │   ├── 3b
+│   │   │   └── 5621bbcaa8bb52bc152c50dbb6a032f7bfb111
+│   │   ├── 43
+│   │   │   └── 9f2a16d28408a57613f1e7c8bd1f7ab16176b8
+│   │   ├── 4a
+│   │   │   └── 1f73811741e9b9b10e60f7a87847d47181c95d
+│   │   ├── 58
+│   │   │   └── 9fbd97341dad5c404287d647a94dae08ca9f6d
+│   │   ├── 5c
+│   │   │   └── b31a2a0e448f98da26e083e40757924f8ac702
+│   │   ├── 61
+│   │   │   ├── 196a7200f9d16d05bbe7bdd1eeb6754958c7bd
+│   │   │   └── 38c5659163fa4c002de27ac51f51e89926caeb
+│   │   ├── 69
+│   │   │   └── 0424730ed0ea544cdce326d0c24e45d01cd019
+│   │   ├── 8a
+│   │   │   └── a26455d23acf904be3ed9dfb3a3efe3e49245a
+│   │   ├── 96
+│   │   │   └── 6af3cb4ecf04924036075e1f9148aa71af21be
+│   │   ├── 9d
+│   │   │   └── 1dcfdaf1a6857c5f83dc27019c7600e1ffaff8
+│   │   ├── a3
+│   │   │   └── 7c0c3692d7d980e090cf0ddada5712e8a140f8
+│   │   ├── a8
+│   │   │   └── c36bbc4e4a61f67ea6c93559ba2d95db66d905
+│   │   ├── ac
+│   │   │   └── 3f0fc5c55c6820b5714ea2e9ffd48b44943ed5
+│   │   ├── b9
+│   │   │   └── 01702d0857474efa22b634353b6721dc167be2
+│   │   ├── ba
+│   │   │   └── 0402531d27247ba488f0eae16d40520bed7135
+│   │   ├── bb
+│   │   │   └── 5b32923da4b9a544d11051934b3d660ad72b0c
+│   │   ├── c5
+│   │   │   ├── 358db625ea320a4b8abc12d8741ae02cf9f58e
+│   │   │   └── e7d6831a7c3e85c53a123da3567753a004cda8
+│   │   ├── cd
+│   │   │   └── c1f91634a06aa58dfc59d5fd351e9e9d87b33c
+│   │   ├── d0
+│   │   │   └── bb9d43ab108303bacdd7c6a0b53f5b2a9dfd04
+│   │   ├── d4
+│   │   │   └── 972214d49712f18bca977ccfaeb54b6e0a3962
+│   │   ├── d5
+│   │   │   └── 64d0bc3dd917926892c55e3706cc116d5b165e
+│   │   ├── e5
+│   │   │   └── 036f6f2428ef1b92c4e90811b6417487c56353
+│   │   ├── e6
+│   │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   │   ├── ec
+│   │   │   └── 60e7fdfe4334beedec28f15d12e4c0f6f1787c
+│   │   ├── f1
+│   │   │   ├── 02a9cadfa89ce554b3b26d2b90bfba2e05273c
+│   │   │   └── 5c3a90d3844d338db3698daf5f39f848208c74
+│   │   ├── f2
+│   │   │   └── 1065d130f56c2a8cd398e97735225b826811f2
+│   │   ├── f6
+│   │   │   ├── 90d2625ccc1c57b82ef0084358bb9d36a0f14f
+│   │   │   └── 99a635338e166bf7d346436eb00908ddb4b7f9
+│   │   ├── fb
+│   │   │   └── 77486f77bd9824d76bc6612c6ea36fd33fa14c
+│   │   ├── fe
+│   │   │   └── 4f4e8d87281b70e2dee9c1f73af892a9cba966
+│   │   ├── ff
+│   │   │   └── f3ba9fbedf2f881322783ff32bac9ec95b2d2a
+│   │   ├── info
+│   │   └── pack
+│   └── refs
+│       ├── heads
+│       │   ├── gui-editable
+│       │   └── main
+│       ├── remotes
+│       │   └── origin
+│       │       ├── gui-editable
+│       │       └── main
+│       └── tags
+├── .gitignore
+├── .pre-commit-config.yaml
+├── README.md
+├── dashboard
+│   ├── __init__.py
+│   ├── config
+│   │   └── __init__.py
+│   ├── dashboard
+│   │   └── __init__.py
+│   ├── fixtures
+│   │   ├── custom_field.json
+│   │   ├── dashboard_icon.json
+│   │   └── property_setter.json
+│   ├── hooks.py
+│   ├── modules.txt
+│   ├── patches.txt
+│   ├── public
+│   │   ├── .gitkeep
+│   │   ├── css
+│   │   └── js
+│   ├── templates
+│   │   ├── __init__.py
+│   │   ├── includes
+│   │   └── pages
+│   │       └── __init__.py
+│   ├── utils
+│   │   └── cache.py
+│   └── www
+│       └── dashboard
+│           ├── __init__.py
+│           ├── index.html
+│           └── index.py
+├── dashboard_structure.txt
+├── license.txt
+├── pyproject.toml
+└── structure.txt
+
+68 directories, 98 files

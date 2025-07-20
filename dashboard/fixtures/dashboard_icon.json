@@ -1,5 +1,27 @@
 [
  {
+  "color": "#29CD42",
+  "docstatus": 0,
+  "doctype": "Dashboard Icon",
+  "icon": "fa-book",
+  "label": "Google",
+  "modified": "2025-07-20 15:50:15.581796",
+  "name": "l5bud58lt3",
+  "role": "Google",
+  "url": "https://google.com"
+ },
+ {
+  "color": "#ED6396",
+  "docstatus": 0,
+  "doctype": "Dashboard Icon",
+  "icon": "fa-book",
+  "label": "Facebook",
+  "modified": "2025-07-20 15:52:29.237652",
+  "name": "mf42urcnh1",
+  "role": "Facebook",
+  "url": "https://facebook.com"
+ },
+ {
   "color": "#449CF0",
   "docstatus": 0,
   "doctype": "Dashboard Icon",
@@ -7,7 +29,18 @@
   "label": "OfficeTrax",
   "modified": "2025-07-18 17:13:30.629925",
   "name": "eea9orlie0",
-  "roles": "OfficeTrax",
+  "role": "OfficeTrax",
   "url": "seahaven.core7.net"
+ },
+ {
+  "color": "#39E4A5",
+  "docstatus": 0,
+  "doctype": "Dashboard Icon",
+  "icon": "fa-book",
+  "label": "test",
+  "modified": "2025-07-20 16:03:47.685306",
+  "name": "t34ajbku7b",
+  "role": "Google",
+  "url": "https://google.com"
  }
 ]
