@@ -1,18 +1,15 @@
-<<<<<<< HEAD
-# frappe_dashboard
-=======
-### Dashboard
+# Frappe Dashboard
 
 A role-based landing page for link navigation
 
 ### Installation
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+You can install this app using the bench CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app dashboard
+bench get-app https://github.com/Sea-Haven-Industries/frappe_dashboard --branch main
+bench --site {your-site-name} install-app dashboard
 ```
 
 ### Contributing
@@ -34,4 +31,3 @@ Pre-commit is configured to use the following tools for checking and formatting 
 ### License
 
 mit
->>>>>>> fff3ba9 (feat: Initialize App)
