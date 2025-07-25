@@ -1,3 +1,6 @@
+# Copyright (c) 2025, Adam Moussa and contributors
+# For license information, please see license.txt
+
 app_name = "dashboard"
 app_title = "Dashboard"
 app_publisher = "Adam Moussa"
@@ -243,23 +246,5 @@ app_license = "mit"
 # }
 
 fixtures = [
-    {
-        "dt": "Custom Field",
-        "filters": [
-            ["dt", "in", ["Dashboard Icon"]]
-        ]
-    },
-    {
-        "dt": "Property Setter"
-    },
-    "Dashboard Icon"  # export the entire custom DocType
+	"Dashboard Icon",
 ]
-
-doc_events = {
-    "Dashboard Icon": {
-        "after_insert": "dashboard.utils.cache.clear_dashboard_cache",
-        "on_update": "dashboard.utils.cache.clear_dashboard_cache",
-        "on_trash": "dashboard.utils.cache.clear_dashboard_cache",
-    }
-}
-

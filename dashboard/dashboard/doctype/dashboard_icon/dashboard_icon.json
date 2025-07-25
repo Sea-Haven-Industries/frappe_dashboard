@@ -46,7 +46,7 @@
  "modified_by": "Administrator",
  "module": "Dashboard",
  "name": "Dashboard Icon",
- "owner": "adam@seahavenind.com",
+ "owner": "Administrator",
  "permissions": [
   {
    "create": 1,

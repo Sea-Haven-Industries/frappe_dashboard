@@ -1,57 +1,74 @@
+{% extends "templates/web.html" %}
+{% block content %}
 <div class="portal-wrapper">
-  <h1>Sea Haven Portal</h1>
-  <div class="grid">
-    {% for icon in icons %}
-      <a href="{{ icon.url }}" class="app-link">
-        <i class="fas {{ icon.icon }}"></i>
-        <div class="app-label">{{ icon.label }}</div>
-      </a>
-    {% endfor %}
-  </div>
+	<h1>Sea Haven Portal</h1>
+	<div class="grid">
+		{% for icon in icons %}
+		<a href="{{ icon.url }}" class="app-link">
+			<i class="fas {{ icon.icon }}"></i>
+			<div class="app-label">{{ icon.label }}</div>
+		</a>
+		{% endfor %}
+	</div>
 </div>
-
+<script>
+	window.csrf_token = '{{ csrf_token }}'
+	frappe.user = '{{ user }}'
+</script>
+{% endblock %}
+{%- block style -%}
 <style>
-  .portal-wrapper {
-    text-align: center;
-    padding: 40px;
-    font-family: "Segoe UI", sans-serif;
-    background-color: #f9f9f9;
-  }
-  h1 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    color: #333;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  .app-link {
-    background: #fff;
-    padding: 30px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #333;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .app-link:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-  .app-link i {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #007bff;
-  }
-  .app-label {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 10px;
-  }
+	.portal-wrapper {
+		text-align: center;
+		padding: 40px;
+		font-family: "Segoe UI", sans-serif;
+		background-color: #f9f9f9;
+	}
+
+	h1 {
+		margin-bottom: 40px;
+		font-size: 2.5rem;
+		color: #333;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 30px;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.app-link {
+		background: #fff;
+		padding: 30px 20px;
+		border-radius: 10px;
+		text-decoration: none;
+		color: #333;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+
+	.app-link:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.app-link i {
+		font-size: 2.5rem;
+		margin-bottom: 10px;
+		color: #007bff;
+	}
+
+	.app-label {
+		font-size: 1rem;
+		font-weight: 600;
+		margin-top: 10px;
+	}
+	.web-footer {
+		display: none;
+	}
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+{% endblock %}
