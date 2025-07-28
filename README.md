@@ -7,9 +7,9 @@ A role-based landing page for link navigation
 You can install this app using the bench CLI:
 
 ```bash
-cd $PATH_TO_YOUR_BENCH
+cd frappe-bench
 bench get-app https://github.com/Sea-Haven-Industries/frappe_dashboard --branch main
-bench --site {your-site-name} install-app dashboard
+bench --site accounting.seahaven.com install-app dashboard
 ```
 
 ### Contributing
